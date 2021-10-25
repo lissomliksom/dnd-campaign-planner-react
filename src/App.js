@@ -1,13 +1,17 @@
 import Sidebar from './components/Sidebar'
+import Intro from './components/Intro'
+import Updates from './components/Updates'
+
 
 import './App.css';
 
 const App = () => {
     return(
-        <>
-            <p className="m-4">Yolocopter</p>
+        <div className="my-20">
+            <Intro />
+            <Updates />
             <Sidebar />
-        </>
+        </div>
     )
 }
 
