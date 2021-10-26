@@ -6,4 +6,5 @@ body {
     ),
     url("https://images.unsplash.com/photo-1629196613836-0a7e2541990a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1434&q=80");
   background-size: cover;
+  font-family: 'Roboto', sans-serif;
 }

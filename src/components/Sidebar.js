@@ -4,11 +4,11 @@ import { Dialog, Transition } from '@headlessui/react'
 import { XIcon } from '@heroicons/react/outline'
 
 export default function Sidebar() {
-  const [open, setOpen] = useState(true)
+  const [menuOpen, setMenuOpen] = useState(true)
 
   return (
-    <Transition.Root show={open} as={Fragment}>
-      <Dialog as="div" className="fixed inset-0 overflow-hidden" onClose={setOpen}>
+    <Transition.Root show={menuOpen} as={Fragment}>
+      <Dialog as="div" className="fixed inset-0 overflow-hidden" onClose={setMenuOpen}>
         <div className="absolute inset-0 overflow-hidden">
           <Transition.Child
             as={Fragment}
@@ -49,7 +49,7 @@ export default function Sidebar() {
                     <button
                       type="button"
                       className="text-gray-400 rounded-md hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-300"
-                      onClick={() => setOpen(false)}
+                      onClick={() => setMenuOpen(false)}
                     >
                       <span className="sr-only">Close panel</span>
                       <XIcon className="w-6 h-6" aria-hidden="true" />
@@ -123,7 +123,7 @@ export default function Sidebar() {
                       <hr className="border-gray-800" />
 
                       <a href="/" className="flex items-start p-3 transition duration-500 ease-in-out bg-gray-900 rounded-lg hover:bg-gray-700">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-indigo-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6 text-teal-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
                         </svg>
                         <div className="ml-4">
@@ -135,6 +135,36 @@ export default function Sidebar() {
                           </p>
                         </div>
                       </a>
+
+                      <a href="/" className="flex items-start p-3 transition duration-500 ease-in-out bg-gray-900 rounded-lg hover:bg-gray-700">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-amber-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                        </svg>
+                        <div className="ml-4">
+                          <p className="text-base font-medium text-gray-100">
+                            Items, shops and loot
+                          </p>
+                          <p className="mt-1 text-sm text-gray-500">
+                            Reference and generators for sessions.
+                          </p>
+                        </div>
+                      </a>
+
+                      <a href="/" className="flex items-start p-3 transition duration-500 ease-in-out bg-gray-900 rounded-lg hover:bg-gray-700">
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-purple-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                      </svg>
+                        <div className="ml-4">
+                          <p className="text-base font-medium text-gray-100">
+                            NPCs
+                          </p>
+                          <p className="mt-1 text-sm text-gray-500">
+                            Name tables and generators for sessions.
+                          </p>
+                        </div>
+                      </a>
+
+                      
 
                       <hr className="border-gray-800" />
 

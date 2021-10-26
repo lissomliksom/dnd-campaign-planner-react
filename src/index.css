@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.blendverse-container {
+    @apply px-4 py-6 max-w-xl mx-auto;
+}

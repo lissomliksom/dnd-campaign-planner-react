@@ -5,9 +5,26 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Todo
 
 - Make toggle-button for menu
+-- Pass down state
+
 - Responsive height body background-image + gradient
+
 - Proper container-wrapper for all content
+
+- MenuItems as components
+-- Dictionary: { title: '', subtitle, '', icon: 'heroicon/x', style: 'primary/secondary/tertiary' }
+-- MenuItems.filter(set style ut fra primary/secondary/tertiary)
+
+- Install ReactRouter
+
+- Recent updates: 
+-- Map kun 3 siste items
+-- Modal med komplett historikk
+
+- Clean up CSS: Use both App.css and Index.css?
+
 - Class-table
+
 
 ### Making a Progressive Web App
 
