@@ -4,8 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Todo
 
-- Make toggle-button for menu
-  -- Pass down state
+- Menu button transition opacity-0
 
 - MenuItems as components
   -- Dictionary: { title: '', subtitle, '', icon: 'heroicon/x', style: 'primary/secondary/tertiary' }
@@ -13,11 +12,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - Install ReactRouter
 
-- Recent updates:
-  -- Map kun 3 siste items
-  -- Modal med komplett historikk
+- Different scrollbars-styles in Sidebar.css and App.css
 
-- Clean up CSS: Use both App.css and Index.css?
+- Recent updates:
+  -- Modal med komplett historikk
 
 - Class-table
 
